@@ -17,8 +17,15 @@ export const authOptions: AuthOptions = {
           response_type: 'code'
         }
       }
-    })
+    }),
+   
   ],
+  callbacks:{
+    async signIn({ account, profile }) {
+      console.log(account, profile)
+      return true
+    }
+  },
   pages: {
     error: '/sign-in',
     signIn: '/sign-in'

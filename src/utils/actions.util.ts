@@ -7,6 +7,20 @@ const env = envUtil.getEnv();
 
 const openAI = new OpenAI({ apiKey: env.openAI });
 
+export const genateImag = async () => {
+  console.log('imgimgimg');
+  console.log('imgimgimg');
+
+  const img = await openAI.images.generate({
+    prompt: `Generate a logo for a website, the idea of which is to generate city tours with the help of artificial intelligence, the logo should be associated with an assistant, AI, a planet.`,
+    n: 1,
+    size: '512x512'
+  });
+
+  console.log(img);
+  console.log(img?.data?.[0]?.url);
+};
+
 export const genarateTourResponse = async ({
   city,
   country

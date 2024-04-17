@@ -1,17 +1,22 @@
 'use client';
-import { genarateTourResponse } from '@/src/utils/actions.util';
+import { genarateTourResponse, genateImag } from '@/src/utils/actions.util';
 // import { getServerUser } from '@/src/utils/auth/get-server-user';
 import { Field, Form, Formik } from 'formik';
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 
 // eslint-disable-next-line @next/next/no-async-client-component
 const Profile = () => {
-  // const user = await getServerUser();
+  // const data = async ()=>{
+  //   const user = await getServerUser();
+  //   console.log(user)
+  // }
+  // data()
   const [tour, setTour] = useState<string | null>(null);
   // console.log(user);
   return (
     <div>
       <h1>Profile,</h1>
+      <button onClick={() => genateImag()}>12345678</button>
       {/* <p> {JSON.stringify(user)}</p> */}
       <Formik
         initialValues={{ city: '', country: '' }}
