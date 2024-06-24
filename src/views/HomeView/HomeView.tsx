@@ -4,6 +4,7 @@ import HeroSection from "./components/HeroSection";
 import PopularSearchSection from "./components/PopularSearchSection";
 import TourTypesSection from "./components/TourTypesSection";
 import WhyChooseUsSection from "./components/WhyChooseUsSection";
+import SubscriptionPlanSection from "./components/SubscriptionPlanSection";
 import styles from './HomeView.module.scss';
 
 function HomeView() {
@@ -12,6 +13,7 @@ function HomeView() {
         <HeroSection />
         <PopularSearchSection />
         <WhyChooseUsSection />
+        <SubscriptionPlanSection />
         <CategoriesSection />
         <TourTypesSection />
         <FAQsSection />

@@ -1,0 +1,22 @@
+.textInput {
+    width: 350px;
+    height: 40px;
+    border: 1px solid #236477;
+    border-radius: 5px;
+    padding: 10px 0px 10px 10px;
+    &::placeholder {
+        color: rgba(35, 99, 119, 0.5);
+    }
+    &:focus {
+        border: 1px solid #236477;
+        outline: none;
+    }
+}
+
+.label {
+    font-size: 16px;
+    font-weight: 700;
+    color: #236477;
+    margin-bottom: 5px;
+}
+
