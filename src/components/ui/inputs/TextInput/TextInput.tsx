@@ -1,5 +1,5 @@
 import { FieldHookConfig, useField } from 'formik';
-import styles from "./TextInput.module.scss";
+import styles from './TextInput.module.scss';
 
 interface ITextInputProps {
   label: string;
@@ -13,11 +13,17 @@ function TextInput({
 }: ITextInputProps & FieldHookConfig<string>) {
   const [field, meta] = useField(props);
   return (
-    <div>
-      <label htmlFor={props.id || props.name} className={styles.label}>{label}</label>
-      <input className={styles.textInput} {...field} placeholder={placeholder} />
+    <div className={meta.touched && meta.error ? styles.errorRoot : undefined}>
+      <label htmlFor={props.id || props.name} className={styles.label}>
+        {label}
+      </label>
+      <input
+        className={styles.textInput}
+        {...field}
+        placeholder={placeholder}
+      />
       {meta.touched && meta.error ? (
-        <div className="error">{meta.error}</div>
+        <div className={styles.error}>{meta.error}</div>
       ) : null}
     </div>
   );

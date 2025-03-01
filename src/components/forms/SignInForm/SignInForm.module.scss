@@ -1,15 +1,25 @@
 .form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
   margin: auto;
-  width: 350px;
+  max-width: 500px;
+  padding: 0px 25px;
+  @media (min-width: 600px) {
+    padding: 0px 50px;
+  }
+
+  @media (min-width: 992px) {
+    width: 300px;
+    padding: 0px;
+  }
 }
 
 .welcome_back {
   color: #173042;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 700;
+  margin-top: 20px;
 }
 
 .container {
@@ -43,6 +53,7 @@
   border: none;
   border-radius: 10px;
   margin-top: 15px;
+  cursor: pointer;
 }
 
 .sign_up_with_google {
@@ -58,9 +69,10 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 
   img {
-      margin-right: 10px;
+    margin-right: 10px;
   }
 }
 

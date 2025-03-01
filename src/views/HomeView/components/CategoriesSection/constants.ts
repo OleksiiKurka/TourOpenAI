@@ -10,53 +10,73 @@ import CityImage from '@/src/assets/city.jpg';
 import CountrysideImage from '@/src/assets/countryside.jpg';
 
 export const categories = [
-    {
-      title: 'Sea',
-      image: SeaImage,
-    },
+  {
+    title: 'Sea',
+    subtitle: '🌊 Coastal adventure',
+    image: SeaImage,
+    quantityOfPosts: 10
+  },
 
-    {
-      title: 'Ocean',
-      image: OceanImage,
-    },
+  {
+    title: 'Ocean',
+    subtitle: '💙 Azure waves',
+    image: OceanImage,
+    quantityOfPosts: 10
+  },
 
-    {
-      title: 'Mountains',
-      image: MountainsImage,
-    },
+  {
+    title: 'Mountains',
+    subtitle: '🏔️ Peaks of the world',
+    image: MountainsImage,
+    quantityOfPosts: 10
+  },
 
-    {
-      title: 'Desert',
-      image: DesertImage,
-    },    
+  {
+    title: 'Desert',
+    subtitle: '🏜️ Sandy dunes',
+    image: DesertImage,
+    quantityOfPosts: 10
+  },
 
-    {
-      title: 'Lake',
-      image: LakeImage,
-    }, 
+  {
+    title: 'Lake',
+    subtitle: '🚣 Serene Haven',
+    image: LakeImage,
+    quantityOfPosts: 10
+  },
 
-    {
-      title: 'River',
-      image: RiverImage,
-    }, 
+  {
+    title: 'River',
+    subtitle: '🚣 Serene Haven',
+    image: RiverImage,
+    quantityOfPosts: 10
+  },
 
-    {
-      title: 'Rainforest',
-      image: RainforestImage,
-    }, 
+  {
+    title: 'Rainforest',
+    subtitle: '🚣 Serene Haven',
+    image: RainforestImage,
+    quantityOfPosts: 10
+  },
 
-    {
-      title: 'Island',
-      image: IslandImage,
-    }, 
+  {
+    title: 'Island',
+    subtitle: '🚣 Serene Haven',
+    image: IslandImage,
+    quantityOfPosts: 10
+  },
 
-    {
-      title: 'City',
-      image: CityImage,
-    }, 
+  {
+    title: 'City',
+    subtitle: '🚣 Serene Haven',
+    image: CityImage,
+    quantityOfPosts: 10
+  },
 
-    {
-      title: 'Countryside',
-      image: CountrysideImage,
-    }, 
+  {
+    title: 'Countryside',
+    subtitle: '🚣 Serene Haven',
+    image: CountrysideImage,
+    quantityOfPosts: 10
+  }
 ];

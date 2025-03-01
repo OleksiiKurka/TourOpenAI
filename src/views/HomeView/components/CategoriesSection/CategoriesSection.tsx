@@ -28,16 +28,22 @@ function CategoriesSection() {
           freeMode={true}
         >
           {categories.map((item, index) => (
-            <SwiperSlide>
-              <Link href="#" key={index}>
+            <SwiperSlide key={index}>
+              <Link href="#">
                 <div className={styles.wrapper}>
                   <Image
+                    className={styles.img}
                     src={item.image}
                     alt="Categories"
-                    width={300}
-                    height={200}
+                    fill
                   />
-                  <h3>{item.title}</h3>
+                  <div className={styles.counter_container}>
+                    <p>{item.quantityOfPosts}🏕️</p>
+                  </div>
+                  <div className={styles.bottom_container}>
+                    <h4>{item.title}</h4>
+                    <p>{item.subtitle}</p>
+                  </div>
                 </div>
               </Link>
             </SwiperSlide>
