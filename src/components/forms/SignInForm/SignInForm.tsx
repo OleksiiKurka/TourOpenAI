@@ -1,12 +1,12 @@
 'use client';
 import { Form, Formik } from 'formik';
 import * as Yup from 'yup';
-import TextInput from '../../ui/inputs/TextInput';
+import TextInput from '@/src/components/ui/inputs/TextInput';
 import styles from './SignInForm.module.scss';
 import GoogleLogo from '@/src/assets/icons/google_logo.svg';
 import Image from 'next/image';
 import Link from 'next/link';
-import CheckBox from '../../ui/inputs/CheckBox';
+import CheckBox from '@/src/components/ui/inputs/CheckBox';
 
 const SignInSchema = Yup.object().shape({
   email: Yup.string()

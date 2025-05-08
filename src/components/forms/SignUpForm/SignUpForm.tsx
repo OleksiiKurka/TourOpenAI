@@ -1,7 +1,7 @@
 'use client';
 import { Form, Formik, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
-import TextInput from '../../ui/inputs/TextInput';
+import TextInput from '@/src/components/ui/inputs/TextInput';
 import styles from './SignUpForm.module.scss';
 import GoogleLogo from '@/src/assets/icons/google_logo.svg';
 import Image from 'next/image';
