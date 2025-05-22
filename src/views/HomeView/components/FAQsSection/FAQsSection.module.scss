@@ -1,0 +1,41 @@
+.root {
+    h2 {
+        color: #173042;
+        font-weight: 600;
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .FAQs_container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+        margin-top: 60px;
+        cursor: pointer;
+    }
+
+    .cont {
+        width: 1258px;
+        min-height: 88px;
+        background-color: #fff;
+        color: #173042;
+        border-radius: 15px;
+        box-shadow: 0px 0px 18.9px -6px #00000040;
+        padding: 25px 25px 25px 25px;
+        font-size: 24px;
+        line-height: 38px;
+    }
+
+    summary {
+        text-decoration: none;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    p {
+        margin-top: 30px;
+    }
+
+}

@@ -1,0 +1,81 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: auto;
+  max-width: 500px;
+  padding: 0px 25px;
+  @media (min-width: 600px) {
+    padding: 0px 50px;
+  }
+
+  @media (min-width: 992px) {
+    width: 300px;
+    padding: 0px;
+  }
+}
+
+.welcome_back {
+  color: #173042;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.forgot_password {
+  color: #236477;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.buttons_container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  button {
+    width: 100%;
+    height: 40px;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+}
+
+.sign_up_button {
+  background-color: #236477;
+  color: white;
+  text-align: center;
+  border: none;
+  margin-top: 15px;
+}
+
+.sign_up_with_google {
+  background-color: white;
+  color: #236477;
+  border: 1px #236477 solid;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    margin-right: 10px;
+  }
+}
+
+.sign_in_link {
+  text-decoration: none;
+  color: #173042;
+}
+
+.sub_text {
+  color: #173042;
+}

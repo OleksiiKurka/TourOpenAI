@@ -1,0 +1,21 @@
+.checkbox {
+    width: 22px;
+    height: 22px;
+    border: #236477 1px solid;
+    border-radius: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.label {
+    font-size: 12px;
+    font-weight: 500;
+    color: #236477;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+

@@ -1,0 +1,41 @@
+.root {
+    h2 {
+        text-align: center;
+        font-size: 48px;
+        font-weight: 600;
+        color: #173042;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 30px;
+        row-gap: 40px;
+        flex-wrap: wrap;
+        margin-top: 60px;
+        div {
+            max-width: 400px;
+            min-width: 350px;
+            height: 320px;
+            box-shadow: 0px 0px 15.8px 0px #00000040;
+            border-radius: 15px;
+            display: grid;
+            grid-template-columns: 1;
+            justify-items: center;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        h3 {
+            color: #173042;
+            font-size: 32px;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    }
+
+}

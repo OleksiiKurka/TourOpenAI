@@ -1,11 +1,7 @@
-import SignInPage from '@/src/components/Auth/SignInPage';
+import SignInView from "@/src/views/registration/SignInView";
 
-const SignIn = () => {
+export default function SignIn() {
   return (
-    <>
-      <SignInPage />
-    </>
+      <SignInView />
   );
-};
-
-export default SignIn;
+}
